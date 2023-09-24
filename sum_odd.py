@@ -1,11 +1,12 @@
 #A four-digit integer is given. Find the sum of odd digits in it.
 #Create a variable "var_int" and assign it a four-digit integer value.
-var_int=int(input("raqamni kiriting: "))
+var_int=1996
 #Create a variable "sum_odd" and assign it 0.
 sum_odd=0
 #Find the sum of the odd digits in the variable "var_int".
-for n in range(4) :
-    if var_int%2==1 :
-        sum_odd+=var_int%10
-    var_int=var_int//10
-print (sum_odd)
+x1=var_int%10
+x2=var_int//10%10
+x3=var_int//100%10
+x4=var_int//1000
+sum_even=x1%2*x1+x2%2*x2+x3%2*x3+x4%2*x4
+print(sum_even)
